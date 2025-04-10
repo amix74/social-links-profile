@@ -32,6 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  z-index: 1;
 }
 
 .profile {
@@ -126,11 +127,38 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-width: 300px;
   text-align: center;
+  font-size: 11px;
+  margin: 15px 0;
+  z-index: 0;
 }
 .attribution a {
-  background: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color: #c4f82a;
+  text-align: center;
+  transition: color 0.1s, background 0.5s;
+}
+.attribution a:hover {
+  border-radius: 4px;
+  background: #c4f82a;
+  color: #333;
+  transition: color 0.3s, background 0.7s;
+}
+.attribution a:focus-visible {
+  border-radius: 4px;
+  background: #c4f82a;
+  color: #333;
+  transition: color 0.1s, background 0.3s;
+  outline: none;
 }
 
 @media screen and (min-width: 576px) {
