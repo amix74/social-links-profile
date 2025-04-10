@@ -98,6 +98,7 @@ body {
   line-height: 150%;
   font-weight: 700;
   color: #fff;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,7 +108,7 @@ body {
 .links ul .button {
   background: #333;
   border-radius: 8px;
-  width: 279px;
+  width: 100%;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -119,5 +120,17 @@ body {
   text-align: center;
 }
 .attribution a {
-  bg: hsl(228, 45%, 44%);
+  background: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    padding: 40px;
+    width: 384px;
+    height: 611px;
+    max-width: 456px;
+  }
+  .links {
+    width: 304px;
+  }
 }
