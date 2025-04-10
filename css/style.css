@@ -1,1 +1,123 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: #141414;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 12px;
+  width: 327px;
+  height: 579px;
+  background: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-pic {
+  border-radius: 999px;
+  width: 88px;
+  height: 88px;
+}
+
+.name-location {
+  width: 279px;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.name {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+  color: #fff;
+}
+
+.location {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #fff;
+  color: #c4f82a;
+}
+
+.bio {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 279px;
+  height: 289px;
+}
+.links ul {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.links ul .button {
+  background: #333;
+  border-radius: 8px;
+  width: 279px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  bg: hsl(228, 45%, 44%);
+}
