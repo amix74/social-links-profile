@@ -36,7 +36,7 @@ $spacing-50: 4px;
   color: $white;
 }
 
-@mixin text-preset-3() {
+@mixin text-preset-2-bold() {
   font-family: $font-family;
   font-size: 14px;
   line-height: 150%;
@@ -105,7 +105,7 @@ body {
 }
 
 .location {
-  @include text-preset-3();
+  @include text-preset-2-bold();
   color: $green;
 }
 
@@ -120,18 +120,14 @@ body {
   align-items: center;
   width: 279px;
   height: 289px;
+  gap: $spacing-200;
+  list-style: none;
 
-  ul {
-    list-style: none;
-    @include text-preset-3();
+  .button {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: $spacing-200;
 
-    .button {
+    a {
+      @include text-preset-2-bold();
       background: $grey-700;
       border-radius: $spacing-100;
       width: 100%;
@@ -139,10 +135,25 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: color 0.3s, background 0.9s;
+      text-decoration: none;
+
+      &:hover {
+        background: $green;
+        color: $grey-700;
+        cursor: url("../assets/images/handcursor.svg") 10 0, pointer;
+        transition: color 0.3s, background 0.7s;
+      }
+
+      &:focus {
+        background: $green;
+        color: $grey-700;
+        transition: color 0.1s, background 0.3s;
+        outline: none;
+      }
     }
   }
 }
-
 
 .attribution {
   font-size: 11px;
@@ -163,6 +174,5 @@ body {
   .links {
     width: 304px;
   }
-
 }
 
