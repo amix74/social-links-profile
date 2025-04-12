@@ -6,6 +6,8 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  position: relative;
+  z-index: -1;
 }
 
 .container {
@@ -117,6 +119,7 @@ body {
   margin: 15px 0;
   position: absolute;
   bottom: 0;
+  z-index: 1;
   a {
     text-decoration: none;
     color: $green;
