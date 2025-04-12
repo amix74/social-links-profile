@@ -24,6 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 }
 
 .card {
@@ -140,6 +141,8 @@ body {
   text-align: center;
   font-size: 11px;
   margin: 15px 0;
+  position: relative;
+  bottom: 0;
 }
 .attribution a {
   text-decoration: none;
