@@ -1,13 +1,11 @@
 @import "design_system";
 
 body {
-  background: $color-grey-900;
+  background-color: $color-grey-900;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  position: relative;
-  z-index: -1;
+  min-height: 100vh;
 }
 
 .container {
@@ -16,7 +14,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 999;
 }
 
 .card {
@@ -117,9 +114,7 @@ body {
   text-align: center;
   font-size: 11px;
   margin: 15px 0;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
+
   a {
     text-decoration: none;
     color: $green;
