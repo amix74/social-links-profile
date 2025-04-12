@@ -139,6 +139,7 @@ body {
   min-width: 300px;
   text-align: center;
   font-size: 11px;
+  padding: 12px 0;
 }
 .attribution a {
   text-decoration: none;
