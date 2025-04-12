@@ -12,15 +12,18 @@
 
 body {
   background: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
 }
 
 .container {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .card {
@@ -33,7 +36,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  z-index: 1;
 }
 
 .profile {
@@ -133,25 +135,25 @@ body {
   line-height: 150%;
   font-weight: 400;
   color: #fff;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   min-width: 300px;
   text-align: center;
   font-size: 11px;
   margin: 15px 0;
-  z-index: 0;
 }
 .attribution a {
   text-decoration: none;
   color: #c4f82a;
+  border-radius: 4px;
   text-align: center;
+  padding: 1px 3px;
   transition: color 0.1s, background 0.5s;
 }
 .attribution a:hover {
   border-radius: 4px;
   background: #c4f82a;
   color: #333;
+  cursor: url("../assets/images/handcursor.svg") 10 0, pointer;
   transition: color 0.3s, background 0.7s;
 }
 .attribution a:focus-visible {

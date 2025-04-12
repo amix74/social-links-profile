@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+$font-family: "Inter", sans-serif;
+
+$color-grey-900: #141414;
+$color-grey-800: #1f1f1f;
+$color-grey-700: #333;
+$white: #fff;
+$green: #c4f82a;
+
+$spacing-500: 40px;
+$spacing-300: 24px;
+$spacing-200: 16px;
+$spacing-150: 12px;
+$spacing-100: 8px;
+$spacing-50: 4px;
+
+@mixin text-preset-1() {
+  font-family: $font-family;
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 600;
+  color: $white;
+}
+
+@mixin text-preset-2() {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $white;
+}
+
+@mixin text-preset-2-bold() {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $white;
+}
+
+$cursor: url("../assets/images/handcursor.svg") 10 0, pointer;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
