@@ -141,7 +141,7 @@ body {
   text-align: center;
   font-size: 11px;
   margin: 15px 0;
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 .attribution a {
