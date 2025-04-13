@@ -129,41 +129,6 @@ body {
   outline: none;
 }
 
-.attribution {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  line-height: 150%;
-  font-weight: 400;
-  color: #fff;
-  width: 100%;
-  min-width: 300px;
-  text-align: center;
-  font-size: 11px;
-  padding: 12px 0;
-}
-.attribution a {
-  text-decoration: none;
-  color: #c4f82a;
-  border-radius: 4px;
-  text-align: center;
-  padding: 1px 3px;
-  transition: color 0.1s, background 0.5s;
-}
-.attribution a:hover {
-  border-radius: 4px;
-  background: #c4f82a;
-  color: #333;
-  cursor: url("../assets/images/handcursor.svg") 10 0, pointer;
-  transition: color 0.3s, background 0.7s;
-}
-.attribution a:focus-visible {
-  border-radius: 4px;
-  background: #c4f82a;
-  color: #333;
-  transition: color 0.1s, background 0.3s;
-  outline: none;
-}
-
 @media screen and (min-width: 576px) {
   .card {
     padding: 40px;
