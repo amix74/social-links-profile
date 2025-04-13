@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .container {
@@ -37,7 +37,7 @@ body {
 }
 
 .profile-pic {
-  border-radius: 999px;
+  border-radius: 100%;
   width: 88px;
   height: 88px;
 }
@@ -149,7 +149,7 @@ body {
     height: 611px;
     max-width: 456px;
   }
-  .links {
+  .links, .name-location {
     width: 304px;
   }
 }
